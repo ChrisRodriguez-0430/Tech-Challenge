@@ -1,0 +1,13 @@
+*{
+    padding: 1%;
+    margin-top: 3;
+}
+
+H1{
+    color: blue;
+margin-inline: inherit;
+}
+ul{
+    list-style-type: lower-roman;
+    line-height-step: initial;
+}
