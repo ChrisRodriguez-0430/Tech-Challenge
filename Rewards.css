@@ -1,27 +1,43 @@
 .global{
-     display: flex;
-    height: 100vh; 
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
-
 .statica{
-    background-color:#025d02f3;
-    width: 45%;
+    background-color:#3e943ef3;
+    width: 40%;
+    min-width: 260px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     align-content: center;
+    gap: 20px;
     position: sticky;
-    
+    top: 0;
 }
 .statica img{
-    width: 300px;
-    height: 250px;
+    max-width: 180px;
+    height: auto;
+}
+
+.statica h1{
+    color: white;
+    font-size: 36px;
+    margin: 0;
 }
 
 .statica h2{
     color: white;
-    font-size: 32px;
+    font-size: 24px;
+    margin: 0;
 }
 
 .statica button{
@@ -34,18 +50,17 @@
     border-color: black;
 }
 .scroll {
-    padding: 50px;
+    width: 60%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px;
     text-align: center;
 }
 
-
-
 .tex-ima {
-    
-    display: flex;
+    display: grid;
     flex-direction: row;
-   
-
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .card {
@@ -55,7 +70,7 @@
 
 
 .card img {
-    width: 100%;
+    width: 70%;
     margin-bottom: 10px;
 }
 
@@ -63,4 +78,229 @@
 .card p {
     font-size: 14px;
     color: #333;
+}
+
+.Recompensas{
+    background-color: var(--beige);
+    padding: 40px;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+.Obten {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+
+.Obten h2 {
+    color: #00754A;
+    font-size: 32px;
+    text-align: center;
+}
+
+.Obten p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.pasos-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.pasos-card img {
+    width: 80px;
+}
+
+.pasos-card p {
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.lado-img img {
+    width: 250px;
+}
+ .Experiencia {
+    background-color: var(--beige);
+    padding: 50px;
+    color:black;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+ }
+
+ .Informacion {
+    background-color: #F0F0F0;
+    padding: 40px;
+    max-width: 980px;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+.Informacion h2 {
+    font-size: 24px;
+    color: #081710;
+    margin-bottom: 12px;
+}
+
+.Informacion p {
+    font-size: 15px;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+}
+
+.info-items {
+    display: flex;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.info-card img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.info-card h3 {
+    margin: 10px 0 8px;
+    font-size: 16px;
+    color: #081710;
+}
+
+.info-card p {
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+
+.info-card a {
+    color: #00754A;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+.footer-scroll {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container-scroll {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 25px;
+}
+
+.footer-scroll .col h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.footer-scroll .col ul {
+    list-style: none;
+}
+
+.footer-scroll .col li {
+    margin-bottom: 8px;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-scroll .col li:hover {
+    color: #00754A;
+}
+
+.redes-sociales-scroll {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.social-icon-scroll {
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.social-icon-scroll:hover {
+    transform: scale(1.1);
+}
+
+.footer-links-scroll {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.footer-links-scroll a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links-scroll a:hover {
+    color: #00754A;
+}
+
+.footer-links-scroll span {
+    color: #999;
+    margin: 0 3px;
+}
+
+.footer-copyright-scroll {
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.5;
+    margin-top: 10px;
 }
