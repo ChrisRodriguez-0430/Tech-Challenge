@@ -1,0 +1,154 @@
+.global-register {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.statica-register {
+    background-color: #00754A;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    position: sticky;
+    top: 0;
+    gap: 20px;
+}
+
+.statica-register h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.statica-register p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.statica-register h3 {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.benefits-list li {
+    margin-bottom: 12px;
+    padding: 8px 0;
+}
+
+.scroll-register {
+    width: 60%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #00754A;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #00754A;
+    box-shadow: 0 0 5px rgba(0, 117, 74, 0.3);
+}
+
+.form-group.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group.checkbox input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.form-group.checkbox label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.btn-register {
+    background-color: #00754A;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #005f3a;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-link a {
+    color: #00754A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
